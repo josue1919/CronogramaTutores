@@ -24,7 +24,7 @@ function LoginUser(){
     if(usertutor.email==us&&usertutor.password==pass){
             
             
-            location.href="/index/tutorHome.html"
+            location.href="/index/TutorHome.html"
         
     }else{
         $(document).ready(function(){
