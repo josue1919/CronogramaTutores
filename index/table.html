@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Table - Gestión de maestros</title>
     <meta name="description" content="Es donde se gestionarán a los maestros.">
+    
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
     <link rel="stylesheet" href="../assets/fonts/fontawesome-all.min.css">
@@ -16,6 +17,7 @@
     <link rel="stylesheet" href="../assets/css/Table-With-Search-1.css">
     <link rel="stylesheet" href="../assets/css/Table-With-Search.css">
     <link rel="stylesheet" href="../assets/css/untitled.css">
+    
 </head>
 
 <body id="page-top">
@@ -23,24 +25,27 @@
         <nav class="navbar navbar-dark border-success d-md-flex align-items-start visible bounce animated sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background-color: rgb(139,178,64);">
             <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#" style="background-color: rgb(139,178,64);">
-                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-sliders-h"></i></div>
+                    <img  style="width: 100px; height: 80px;" src="/assets/img/avatars/LOGOUTM.png" alt="Hola">
+                    <!-- <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-sliders-h"></i></div> -->
                     <div class="sidebar-brand-text mx-3"><span>MENÚ</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" role="presentation"><a class="nav-link" href="index.html" style="background-color: rgb(139,178,64);"><i class="fas fa-tachometer-alt"></i><span>Gestionar Maestros</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="profile.html" style="background-color: rgb(139,178,64);"><i class="fas fa-user"></i><span>Perfil</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="table.html" style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Table</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="table.html" style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Crear actividades</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" data-aos="fade" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
+            
+            <!-- Aqui inicia el nav -->
             <div id="content">
                 <nav class="navbar navbar-light navbar-expand bg-white mb-4 topbar static-top" data-toggle="tooltip" data-bs-tooltip="">
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3" id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <form class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control bounce animated border-0 small" type="text" placeholder="Buscar maestros...">
+                            <div class="input-group"><input class="bg-light form-control bounce animated border-0 small" type="text" placeholder="Buscar Actividades...">
                                 <div class="input-group-append"><button class="btn btn-success py-0" type="button" style="background-color: rgb(139,178,64);"><i class="fas fa-search"></i></button></div>
                             </div>
                         </form>
@@ -63,26 +68,26 @@
                                             <div class="mr-3">
                                                 <div class="bg-primary icon-circle"><i class="fas fa-file-alt text-white"></i></div>
                                             </div>
-                                            <div><span class="small text-gray-500">December 12, 2019</span>
-                                                <p>A new monthly report is ready to download!</p>
+                                            <div><span class="small text-gray-500">Octubre 23, 2020</span>
+                                                <p>¡Se ha actualizado la información!</p>
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
                                             <div class="mr-3">
                                                 <div class="bg-success icon-circle"><i class="fas fa-donate text-white"></i></div>
                                             </div>
-                                            <div><span class="small text-gray-500">December 7, 2019</span>
-                                                <p>$290.29 has been deposited into your account!</p>
+                                            <div><span class="small text-gray-500">Octubre 27, 2020</span>
+                                                <p>Se ha agregado a un nuevo profesor experto.</p>
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
                                             <div class="mr-3">
                                                 <div class="bg-warning icon-circle"><i class="fas fa-exclamation-triangle text-white"></i></div>
                                             </div>
-                                            <div><span class="small text-gray-500">December 2, 2019</span>
-                                                <p>Spending Alert: We've noticed unusually high spending for your account.</p>
+                                            <div><span class="small text-gray-500">Noviembre 3, 2020</span>
+                                                <p>Alerta de seguridad: Es necesario verificar tu cuenta de correo eléctronico.</p>
                                             </div>
-                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
+                                        </a><a class="text-center dropdown-item small text-gray-500" href="#">Mostrar todas las alertas</a></div>
                                 </div>
                             </li>
                             <li class="nav-item dropdown no-arrow mx-1" role="presentation">
@@ -91,39 +96,39 @@
                                         role="menu">
                                         <h1 class="dropdown-header" style="background-color: rgb(139,178,64);">¡Mensajes!</h1>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar4.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../assets/img/avatars/avatar4.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
-                                                <div class="text-truncate"><span>Hi there! I am wondering if you can help me with a problem I've been having.</span></div>
-                                                <p class="small text-gray-500 mb-0">Emily Fowler - 58m</p>
+                                                <div class="text-truncate"><span>Envío de nuevas actividades a realizar</span></div>
+                                                <p class="small text-gray-500 mb-0">Carlos Canto - 58m</p>
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar2.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../assets/img/avatars/avatar2.jpeg">
                                                 <div class="status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
-                                                <div class="text-truncate"><span>I have the photos that you ordered last month!</span></div>
-                                                <p class="small text-gray-500 mb-0">Jae Chun - 1d</p>
+                                                <div class="text-truncate"><span>Reunión de tutores la siguiente semana.</span></div>
+                                                <p class="small text-gray-500 mb-0">Aureny Magaly - 1d</p>
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar3.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../assets/img/avatars/avatar3.jpeg">
                                                 <div class="bg-warning status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
-                                                <div class="text-truncate"><span>Last month's report looks great, I am very happy with the progress so far, keep up the good work!</span></div>
-                                                <p class="small text-gray-500 mb-0">Morgan Alvarez - 2d</p>
+                                                <div class="text-truncate"><span>Aviso de eventos internacionales la proxima semana.</span></div>
+                                                <p class="small text-gray-500 mb-0">Eduardo Caballero - 2d</p>
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
-                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="assets/img/avatars/avatar5.jpeg">
+                                            <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="../assets/img/avatars/avatar5.jpeg">
                                                 <div class="bg-success status-indicator"></div>
                                             </div>
                                             <div class="font-weight-bold">
-                                                <div class="text-truncate"><span>Am I a good boy? The reason I ask is because someone told me that people say this to all dogs, even if they aren't good...</span></div>
-                                                <p class="small text-gray-500 mb-0">Chicken the Dog · 2w</p>
+                                                <div class="text-truncate"><span>Se suspenden las actividades el día 23 de.</span></div>
+                                                <p class="small text-gray-500 mb-0">Ing Pablo · 2 días</p>
                                             </div>
                                         </a><a class="text-center dropdown-item small text-gray-500" href="#">Show All Alerts</a></div>
                                 </div>
@@ -133,7 +138,7 @@
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Eduardo Gamboa</span><img class="border rounded-circle img-profile" src="assets/img/dogs/image2.jpeg"></a>
                                     <div
-                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ajustes</a>
+                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="profile.html"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ajustes</a>
                                         <a
                                             class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Actividad</a>
                                             <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Cerrar Sesión</a></div>
@@ -141,117 +146,144 @@
                     </li>
                     </ul>
             </div>
+            <!-- Aqui termina el nav -->
             </nav>
             <div class="container-fluid">
-                <h3 class="text-dark mb-4">Team</h3>
+                <h3 class="text-dark mb-4">Actividades</h3>
+                <!-- inicia formulario -->
+                <div class="card shadow mb-3">
+                    <div class="card-header py-3">
+                        <p class="m-0 font-weight-bold" style="color: rgb(139,178,64);">Fromulario de Actividad</p>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="username"><strong>Actividad</strong></label><input class="form-control" type="text" placeholder="Pedro" name="username" value="Presentación"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group"><label for="email"><strong>Gestion Tutorial</strong></label><input class="form-control" type="email" placeholder="Gomez" name="email" value="Tutor"></div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="first_name"><strong>Duración</strong></label><input class="form-control" type="text" placeholder="Urrutia" name="first_name" value="50 minutos"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group"><label for="last_name"><strong>Carrera</strong></label><div class="dropdown"> <button class="btn btn-light dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Selecciona</button><div class="dropdown-menu" aria-labelledby="dropdownMenuButton"><a class="dropdown-item" href="#">Desarrollo de software</a><a class="dropdown-item" href="#">Redes</a><a class="dropdown-item" href="#">Entornos virtuales</a></div></div></div>
+
+                                </div>
+                               
+                            </div>
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group"><label for="first_name"><strong>Periodo</strong></label><input class="form-control" type="text" placeholder="Urrutia" name="first_name" value="2020"></div>
+                                </div>
+                                <div class="col">
+                                    <div class="form-group"><label for="first_name"><strong>Grado y Grupo</strong></label><input class="form-control" type="text" placeholder="Urrutia" name="first_name" value="Tercero D"></div>
+                                </div>
+                               
+                               
+                            </div>
+                            <!-- <div class="form-group">
+                                <div class="col">
+                                    <div class="form-group"><label for="first_name"><strong>Correo:</strong></label><input class="form-control" type="text" name="first_name" value="manuelgambe99@gmail.com"></div>
+                                </div>
+                            </div> -->
+                        </form><button class="btn btn-primary btn-sm border-white" type="submit" style="background-color: rgb(139,178,64);">Crear Actividad</button></div>
+                </div>
+                <!-- finaliza formulario -->
                 <div class="card shadow">
                     <div class="card-header py-3">
-                        <p class="text-primary m-0 font-weight-bold">Employee Info</p>
+                        <p class="text-primary m-0 font-weight-bold">Tabla de actividades</p>
                     </div>
+                    
                     <div class="card-body">
                         <div class="row">
                             <div class="col-md-6 text-nowrap">
-                                <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label>Show&nbsp;<select class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">10</option><option value="25">25</option><option value="50">50</option><option value="100">100</option></select>&nbsp;</label></div>
+                                <div id="dataTable_length" class="dataTables_length" aria-controls="dataTable"><label>Ver&nbsp;<select class="form-control form-control-sm custom-select custom-select-sm"><option value="10" selected="">1</option><option value="25">2</option><option value="50">3</option><option value="100">4</option><option value="100">5</option></select>&nbsp;</label></div>
                             </div>
                             <div class="col-md-6">
-                                <div class="text-md-right dataTables_filter" id="dataTable_filter"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Search"></label></div>
+                                <div class="text-md-right dataTables_filter" id="dataTable_filter"><label><input type="search" class="form-control form-control-sm" aria-controls="dataTable" placeholder="Buscar..."></label></div>
                             </div>
                         </div>
+            
                         <div class="table-responsive table mt-2" id="dataTable" role="grid" aria-describedby="dataTable_info">
+                            
+                            
+                            
                             <table class="table dataTable my-0" id="dataTable">
                                 <thead>
                                     <tr>
-                                        <th>Name</th>
-                                        <th>Position</th>
-                                        <th>Office</th>
-                                        <th>Age</th>
-                                        <th>Start date</th>
-                                        <th>Salary</th>
+                                        <th>Actividad</th>
+                                        <th>Gestion Tutorial</th>
+                                        <th>Duracion</th>
+                                        <th>Carrera</th>
+                                        <th>Periodo</th>
+                                        <th>Grado y Grupo</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Airi Satou</td>
-                                        <td>Accountant</td>
-                                        <td>Tokyo</td>
-                                        <td>33</td>
-                                        <td>2008/11/28</td>
-                                        <td>$162,700</td>
+                                        <td>Presentación</td>
+                                        <td>Tutor</td>
+                                        <td>50 minutos</td>
+                                        <td>Redes</td>
+                                        <td>2020-2021</td>
+                                        <td>Primero A</td>
                                     </tr>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Angelica Ramos</td>
-                                        <td>Chief Executive Officer(CEO)</td>
-                                        <td>London</td>
-                                        <td>47</td>
-                                        <td>2009/10/09<br></td>
-                                        <td>$1,200,000</td>
+                                        <td>Conferencia</td>
+                                        <td>Tutor</td>
+                                        <td>90 minutos</td>
+                                        <td>Desarrollo de Software</td>
+                                        <td>2020-2021</td>
+                                        <td>Tercero c</td>
                                     </tr>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar3.jpeg">Ashton Cox</td>
-                                        <td>Junior Technical Author</td>
-                                        <td>San Francisco</td>
-                                        <td>66</td>
-                                        <td>2009/01/12<br></td>
-                                        <td>$86,000</td>
+                                        <td>Presentación</td>
+                                        <td>Tutor</td>
+                                        <td>50 minutos</td>
+                                        <td>Redes</td>
+                                        <td>2020-2021</td>
+                                        <td>Primero B</td>
                                     </tr>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar4.jpeg">Bradley Greer</td>
-                                        <td>Software Engineer</td>
-                                        <td>London</td>
-                                        <td>41</td>
-                                        <td>2012/10/13<br></td>
-                                        <td>$132,000</td>
+                                        <td>Presentación</td>
+                                        <td>Tutor</td>
+                                        <td>50 minutos</td>
+                                        <td>Redes</td>
+                                        <td>2020-2021</td>
+                                        <td>Tercero C</td>
                                     </tr>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar5.jpeg">Brenden Wagner</td>
-                                        <td>Software Engineer</td>
-                                        <td>San Francisco</td>
-                                        <td>28</td>
-                                        <td>2011/06/07<br></td>
-                                        <td>$206,850</td>
+                                        <td>Conferencia ciber seguridad</td>
+                                        <td>Tutor</td>
+                                        <td>90 minutos</td>
+                                        <td>Redes</td>
+                                        <td>2020-2021</td>
+                                        <td>Tercero A</td>
                                     </tr>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar1.jpeg">Brielle Williamson</td>
-                                        <td>Integration Specialist</td>
-                                        <td>New York</td>
-                                        <td>61</td>
-                                        <td>2012/12/02<br></td>
-                                        <td>$372,000</td>
+                                        <td>Actividad Recreativa</td>
+                                        <td>Tutor</td>
+                                        <td>90 minutos</td>
+                                        <td>Entornos virtuales</td>
+                                        <td>2020-2021</td>
+                                        <td>Septimo C</td>
                                     </tr>
                                     <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="assets/img/avatars/avatar2.jpeg">Bruno Nash<br></td>
-                                        <td>Software Engineer</td>
-                                        <td>London</td>
-                                        <td>38</td>
-                                        <td>2011/05/03<br></td>
-                                        <td>$163,500</td>
+                                        <td>Conferencia sobre SEO</td>
+                                        <td>Tutor</td>
+                                        <td>50 minutos</td>
+                                        <td>Desarrollo de Software</td>
+                                        <td>2020-2021</td>
+                                        <td>Septimo B</td>
                                     </tr>
-                                    <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="../assets/img/avatars/avatar3.jpeg">Caesar Vance</td>
-                                        <td>Pre-Sales Support</td>
-                                        <td>New York</td>
-                                        <td>21</td>
-                                        <td>2011/12/12<br></td>
-                                        <td>$106,450</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="../assets/img/avatars/avatar4.jpeg">Cara Stevens</td>
-                                        <td>Sales Assistant</td>
-                                        <td>New York</td>
-                                        <td>46</td>
-                                        <td>2011/12/06<br></td>
-                                        <td>$145,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td><img class="rounded-circle mr-2" width="30" height="30" src="../assets/img/avatars/avatar5.jpeg">Cedric Kelly</td>
-                                        <td>Senior JavaScript Developer</td>
-                                        <td>Edinburgh</td>
-                                        <td>22</td>
-                                        <td>2012/03/29<br></td>
-                                        <td>$433,060</td>
-                                    </tr>
+                                   
+                                    
                                 </tbody>
-                                <tfoot>
+                                <!-- <tfoot>
                                     <tr>
                                         <td><strong>Name</strong></td>
                                         <td><strong>Position</strong></td>
@@ -260,12 +292,12 @@
                                         <td><strong>Start date</strong></td>
                                         <td><strong>Salary</strong></td>
                                     </tr>
-                                </tfoot>
+                                </tfoot> -->
                             </table>
                         </div>
                         <div class="row">
                             <div class="col-md-6 align-self-center">
-                                <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">Showing 1 to 10 of 27</p>
+                                <p id="dataTable_info" class="dataTables_info" role="status" aria-live="polite">1 de 5 Páginas</p>
                             </div>
                             <div class="col-md-6">
                                 <nav class="d-lg-flex justify-content-lg-end dataTables_paginate paging_simple_numbers">
@@ -299,6 +331,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
     <script src="../assets/js/Table-With-Search.js"></script>
     <script src="../assets/js/theme.js"></script>
+    
 </body>
 
 </html>
