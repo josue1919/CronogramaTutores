@@ -11,7 +11,7 @@ function LoginUser(){
            if(user.rol!="admin"){
                alert("no puedes pasar");
            }else{
-            location.href="/index/index.html"
+            location.href="/index/home.html"
            }
     }else{
         $(document).ready(function(){
