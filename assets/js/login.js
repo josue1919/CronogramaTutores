@@ -1,6 +1,7 @@
 
 
 var user={email:"admin@admin.com",password:"1234", rol:"admin"}
+var usertutor={email:"tutor@tutor.com",password:"1234", rol:"tutor"}  
 
 function LoginUser(){
     let us=document.getElementById("email").value;
@@ -8,11 +9,10 @@ function LoginUser(){
     console.log(us)
 
     if(user.email==us&&user.password==pass){
-           if(user.rol!="admin"){
-               alert("no puedes pasar");
-           }else{
-            location.href="/index/home.html"
-           }
+          
+          
+            location.href="/index/AdminHome.html"
+        
     }else{
         $(document).ready(function(){
             $('.toast').toast('show');
@@ -20,6 +20,22 @@ function LoginUser(){
         });
        
     }
+
+    if(usertutor.email==us&&usertutor.password==pass){
+            
+            
+            location.href="/index/tutorHome.html"
+        
+    }else{
+        $(document).ready(function(){
+            $('.toast').toast('show');
+
+        });
+    
+    }
+
+
+    
 
 
 
