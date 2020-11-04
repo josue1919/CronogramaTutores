@@ -31,3 +31,13 @@
     justify-content: center;
     height: 40px;
 }
+
+.sectionbuton{
+
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 10px;
+    padding-right: 40px;
+}
