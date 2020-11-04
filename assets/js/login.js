@@ -2,7 +2,7 @@
 
 var user={email:"admin@admin.com",password:"1234", rol:"admin"}
 var usertutor={email:"tutor@tutor.com",password:"1234", rol:"tutor"}  
-
+var userexperto={email:"experto@experto.com",password:"1234",rol:"experto"}
 function LoginUser(){
     let us=document.getElementById("email").value;
     let pass=document.getElementById("pass").value;
@@ -24,7 +24,7 @@ function LoginUser(){
     if(usertutor.email==us&&usertutor.password==pass){
             
             
-            location.href="/index/TutorHome.html"
+            location.href="/index/tutorprofile.html"
         
     }else{
         $(document).ready(function(){
@@ -34,6 +34,18 @@ function LoginUser(){
     
     }
 
+    if(userexperto.email==us&&userexperto.password==pass){
+                
+                
+         location.href="/index/ProfesorExpertoPerfil.html"
+        
+    }else{
+        $(document).ready(function(){
+            $('.toast').toast('show');
+
+        });
+
+    }
 
     
 
