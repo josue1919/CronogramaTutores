@@ -21,28 +21,18 @@
 
 <body id="page-top">
     <div id="wrapper">
-        <nav class="navbar navbar-dark border-success d-md-flex align-items-start visible bounce animated sidebar sidebar-dark accordion bg-gradient-primary p-0"
-            style="background-color: rgb(139,178,64);">
+        <nav class="navbar navbar-dark border-success d-md-flex align-items-start visible bounce animated sidebar sidebar-dark accordion bg-gradient-primary p-0" style="background-color: rgb(139,178,64);">
             <div class="container-fluid d-flex flex-column p-0">
-                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"
-                    style="background-color: rgb(139,178,64);">
-                    <img style="width: 100px; height: 80px;" src="/assets/img/avatars/LOGOUTM.png" alt="Hola">
-                    <!-- <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-sliders-h"></i></div> -->
+                <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#" style="background-color: rgb(139,178,64);">
+                    <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-sliders-h"></i></div>
                     <div class="sidebar-brand-text mx-3"><span>MENÚ</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="ProfesorExpertoActividades.html"
-                            style="background-color: rgb(139,178,64);"><i
-                                class="fas fa-tachometer-alt"></i><span>Gestionar Usuarios/tutores</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="Adminprofile.html"
-                            style="background-color: rgb(139,178,64);"><i
-                                class="fas fa-user"></i><span>Perfil</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="AdminCronogramas.html"
-                            style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Ver cronogrmas</span></a></li>
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="ProfesorExpertoActividades.html" style="background-color: rgb(139,178,64);"><i class="fas fa-tachometer-alt"></i><span>Gestionar Actividades</span></a></li>
+                     <li class="nav-item" role="presentation"><a class="nav-link active" href="ProfesorExpertoPerfil.html" style="background-color: rgb(139,178,64);"><i class="fas fa-tachometer-alt"></i><span>Mi Perfil</span></a></li>
                 </ul>
-                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" data-aos="fade"
-                        id="sidebarToggle" type="button"></button></div>
+                <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" data-aos="fade" id="sidebarToggle" type="button"></button></div>
             </div>
         </nav>
         <div class="d-flex flex-column" id="content-wrapper">
@@ -53,15 +43,7 @@
                     <!-- jsjsjs -->
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3"
                             id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
-                        <form
-                            class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
-                            <div class="input-group"><input class="bg-light form-control bounce animated border-0 small"
-                                    type="text" placeholder="Buscar maestros...">
-                                <div class="input-group-append"><button class="btn btn-success py-0" type="button"
-                                        style="background-color: rgb(139,178,64);"><i
-                                            class="fas fa-search"></i></button></div>
-                            </div>
-                        </form>
+                        
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
                             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link"
                                     data-toggle="dropdown" aria-expanded="false" href="#"><i
@@ -158,7 +140,7 @@
                                             <div class="font-weight-bold">
                                                 <div class="text-truncate"><span>Aviso de eventos internacionales la
                                                         proxima semana.</span></div>
-                                                <p class="small text-gray-500 mb-0">Eduardo Caballero - 2d</p>
+                                                <p class="small text-gray-500 mb-0">Rodrigo Hu - 2d</p>
                                             </div>
                                         </a>
                                         <a class="d-flex align-items-center dropdown-item" href="#">
@@ -182,18 +164,16 @@
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
                                         data-toggle="dropdown" aria-expanded="false" href="#"><span
-                                            class="d-none d-lg-inline mr-2 text-gray-600 small">Eduardo
-                                            Gamboa</span><img class="border rounded-circle img-profile"
-                                            src="/assets/img/avatars/avatar3.jpeg"></a>
+                                            class="d-none d-lg-inline mr-2 text-gray-600 small">Rodrigo
+                                            Hu</span><img class="border rounded-circle img-profile"
+                                            src="../assets/img/dogs/image2.jpeg"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
-                                        <a class="dropdown-item" role="presentation" href="Adminprofile.html"><i
+                                        <a class="dropdown-item" role="presentation" href="ProfesorExpertoPerfil.html"><i
                                                 class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a
-                                            class="dropdown-item" role="presentation" href="AdminHome.html"><i
+                                            class="dropdown-item" role="presentation" href="ProfesorExpertoActividades.html"><i
                                                 class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Gestionar</a>
-                                        <a class="dropdown-item" role="presentation" href="AdminCronogramas.html"><i
-                                                class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Cronogramas</a>
                                         <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation"
-                                            href="index.html">
+                                            href="ProfesorExpertoActividades.html">
                                             <i
                                                 class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Cerrar
                                             Sesión</a>
@@ -210,7 +190,7 @@
                         <div class="col-lg-4">
                             <div class="card mb-3">
                                 <div class="card-body text-center shadow"><img class="rounded-circle mb-3 mt-4"
-                                        src="/assets/img/avatars/avatar3.jpeg" width="160" height="160">
+                                        src="../assets/img/dogs/image2.jpeg" width="160" height="160">
                                     <div class="mb-3"><button class="btn btn-primary btn-sm border rounded border-white"
                                             type="button" style="background-color: rgb(139,178,64);">Cambiar
                                             Foto</button></div>
@@ -306,13 +286,13 @@
                                                         <div class="form-group"><label
                                                                 for="username"><strong>Nombre</strong></label><input
                                                                 class="form-control" type="text" placeholder="Pedro"
-                                                                name="username" value="Eduardo"></div>
+                                                                name="username" value="Rodrigo"></div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="form-group"><label for="email"><strong>Apellido
                                                                     Paterno</strong></label><input class="form-control"
                                                                 type="email" placeholder="Gomez" name="email"
-                                                                value="Gamboa"></div>
+                                                                value="Hu"></div>
                                                     </div>
                                                 </div>
                                                 <div class="form-row">
@@ -320,7 +300,7 @@
                                                         <div class="form-group"><label for="first_name"><strong>Apellido
                                                                     Materno</strong></label><input class="form-control"
                                                                 type="text" placeholder="Urrutia" name="first_name"
-                                                                value="Campos"></div>
+                                                                value="Cervantes"></div>
                                                     </div>
                                                     <div class="col">
                                                         <div class="form-group"><label for="last_name"><strong>Fecha de
@@ -334,7 +314,7 @@
                                                         <div class="form-group"><label
                                                                 for="first_name"><strong>Correo:</strong></label><input
                                                                 class="form-control" type="text" name="first_name"
-                                                                value="manuelgambe99@gmail.com"></div>
+                                                                value="rodrigo_99@gmail.com"></div>
                                                     </div>
                                                 </div>
                                             </form><button class="btn btn-primary btn-sm border-white" type="submit"
