@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <title>Gestión de maestros</title>
+    <title>Gestión de grados</title>
     <meta name="description" content="Es donde se gestionarán a los maestros.">
     <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet"
@@ -27,25 +27,24 @@
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"
                     style="background-color: rgb(139,178,64);">
                     <img style="width: 100px; height: 80px;" src="/assets/img/avatars/LOGOUTM.png" alt="Hola">
-                    <!-- <div class="sidebar-brand-icon rotate-n-15">
-                        <figure style="width: 50px; height: 50px;">
-                            
-                        </figure>
-                    
-                    </div> -->
+                    <!-- <div class="sidebar-brand-icon rotate-n-15"><i class="fas fa-sliders-h"></i></div> -->
                     <div class="sidebar-brand-text mx-3"><span>MENÚ</span></div>
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="AdminHome.html"
                             style="background-color: rgb(139,178,64);"><i
-                                class="fas fa-tachometer-alt"></i><span>Gestionar Maestros/Tutores</span></a></li>
+                                class="fas fa-tachometer-alt"></i><span>Gestionar Usuarios/tutores</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="Adminprofile.html"
                             style="background-color: rgb(139,178,64);"><i
                                 class="fas fa-user"></i><span>Perfil</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="AdminCronogramas.html"
-                            style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>ver
+                            style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Ver
                                 cronogramas</span></a></li>
+
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="Admingradogrupo.html"
+                            style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Gestión de
+                                grados</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" data-aos="fade"
                         id="sidebarToggle" type="button"></button></div>
@@ -298,7 +297,8 @@
                                 <div class="card-header py-3">
 
                                     <p class="m-0 font-weight-bold"
-                                        style="color: rgb(139,178,64); font-size: 20pt; text-align: center;">A G R E G A R</p>
+                                        style="color: rgb(139,178,64); font-size: 20pt; text-align: center;">A G R E G A
+                                        R</p>
                                 </div>
                                 <div class="card-body">
                                     <div id="nav-tabContent" class="tab-content">
@@ -342,7 +342,9 @@
                                                 <div class="col-md-6 form-group">
                                                     <label for="first_name"><strong>Tipo de usuario:</strong></label>
                                                     <div class="dropdown">
-                                                        <button style="background-color: #8BB240; border-color: #8BB240;" class="btn btn-success dropdown-toggle" type="button"
+                                                        <button
+                                                            style="background-color: #8BB240; border-color: #8BB240;"
+                                                            class="btn btn-success dropdown-toggle" type="button"
                                                             id="dropdownMenuButton" data-toggle="dropdown"
                                                             aria-haspopup="true" aria-expanded="false">
                                                             S E L E C C I O N A R
@@ -350,7 +352,27 @@
                                                         <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                                             <a class="dropdown-item" href="#">PROFESOR EXPERTO</a>
                                                             <a class="dropdown-item" href="#">TUTORES</a>
-                                                            
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-md-6 form-group">
+                                                    <label for="first_name"><strong>Materia:</strong></label>
+                                                    <div class="dropdown">
+                                                        <button
+                                                            style="background-color: #8BB240; border-color: #8BB240;"
+                                                            class="btn btn-success dropdown-toggle" type="button"
+                                                            id="dropdownMenuButton" data-toggle="dropdown"
+                                                            aria-haspopup="true" aria-expanded="false">
+                                                            S E L E C C I O N A R
+                                                        </button>
+                                                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                            <a class="dropdown-item" href="#">Base de datos</a>
+                                                            <a class="dropdown-item" href="#">Tutoría</a>
+                                                            <a class="dropdown-item" href="#">Experiencia de usuario</a>
+                                                            <a class="dropdown-item" href="#">Seguridad Informatica</a>
+                                                            <a class="dropdown-item" href="#">Arquitectura de software</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -358,32 +380,22 @@
 
                                                 <!-- Boton -->
                                                 <div class="col-md-12 form-group">
-                                                    <a
-                                                                class="btn btn-success btn-icon-split"
-                                                                role="button"><span class="text-white-50 icon"
-                                                                    style="background-color: rgb(139,178,64);"><i
-                                                                        class="fas fa-check"></i></span><span
-                                                                    class="text-white text"
-                                                                    style="background-color: rgb(139,178,64);">Registrar
-                                                                    Maestro</span></a>
+                                                    <a class="btn btn-success btn-icon-split" role="button"><span
+                                                            class="text-white-50 icon"
+                                                            style="background-color: rgb(139,178,64);"><i
+                                                                class="fas fa-check"></i></span><span
+                                                            class="text-white text"
+                                                            style="background-color: rgb(139,178,64);">Registrar
+                                                            Maestro</span></a>
+
+                                                            <a class="btn btn-success btn-icon-split disabled"
+                                                        role="button"><span class="text-white-50 icon"
+                                                            style="background-color: #E74A3B;"><i
+                                                                class="fas fa-close"></i></span><span
+                                                            class="text-white text"
+                                                            style="background-color: #E74A3B;">Eliminar Maestro</span></a>
                                                 </div>
                                             </form>
-                                        </div>
-                                        <div id="item-1-2" class="tab-pane fade" role="tabpanel"
-                                            aria-labelledby="item-1-2-tab">
-                                            <h4>Second Item Title</h4>
-                                            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                                gravida at eget metus.</p><button class="btn btn-primary"
-                                                type="button">Button</button>
-                                        </div>
-                                        <div id="item-1-3" class="tab-pane fade" role="tabpanel"
-                                            aria-labelledby="item-1-3-tab">
-                                            <h4>Third Item Title</h4>
-                                            <p>Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio,
-                                                dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta
-                                                gravida at eget metus.</p><button class="btn btn-primary"
-                                                type="button">Button</button>
                                         </div>
                                     </div>
                                 </div>
@@ -391,63 +403,208 @@
                         </div>
 
                         <!-- fin -->
-                        <div class="col-md-12 search-table-col">
-                            <div class="col">
-                                <h3 class="text-dark bounce animated mb-0">Buscar maestros expertos</h3>
-                            </div>
-                            <div class="form-group pull-right col-lg-4"><input type="text" class="search form-control"
-                                    placeholder="Buscar maestros..."></div><span class="counter pull-right"></span>
-                            <div class="table-responsive table-bordered table table-hover table-bordered results">
-                                <table class="table table-bordered table-hover">
-                                    <thead class="bill-header cs">
-                                        <tr>
-                                            <th id="trs-hd" class="col-lg-2">Clave del maestro</th>
-                                            <th id="trs-hd" class="col-lg-2">Materia</th>
-                                            <th id="trs-hd" class="col-lg-2">Nombre</th>
-                                            <th id="trs-hd" class="col-lg-2">Apellidos</th>
-                                            <th id="trs-hd" class="col-lg-2">Edad</th>
-                                            <th id="trs-hd" class="col-lg-2">Eliminar</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr class="warning no-result">
-                                            <td colspan="12"><i class="fa fa-warning"></i>&nbsp; No Result !!!
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td>01</td>
-                                            <td>Tutoria</td>
-                                            <td>Juan</td>
-                                            <td>Perez Perez</td>
-                                            <td>30 años</td>
-                                            <td></button><button class="btn btn-danger" style="margin-left: 5px;"
-                                                    type="submit"><i class="fa fa-trash"
-                                                        style="font-size: 15px;"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>02</td>
-                                            <td>Tutoria</td>
-                                            <td>Pedro</td>
-                                            <td>Lopes Lopes</td>
-                                            <td>40 años</td>
-                                            <td></button><button class="btn btn-danger" style="margin-left: 5px;"
-                                                    type="submit"><i class="fa fa-trash"
-                                                        style="font-size: 15px;"></i></button></td>
-                                        </tr>
-                                        <tr>
-                                            <td>03</td>
-                                            <td>Tutoria</td>
-                                            <td>Maria</td>
-                                            <td>Sosa Lopez</td>
-                                            <td>40 años</td>
-                                            <td></button><button class="btn btn-danger" style="margin-left: 5px;"
-                                                    type="submit"><i class="fa fa-trash"
-                                                        style="font-size: 15px;"></i></button></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                        <!-- TABLA DE LOS GRADOS PA GESTIONARLOS JEJEJE -->
+                        <div class="col-md-12">
+                            <div class="card shadow mb-3">
+                                <div class="card-header py-3">
+                                    <p class="m-0 font-weight-bold"
+                                        style="color: rgb(139,178,64); text-align: center !important; font-weight: bold; font-size: 20pt;">
+                                        Buscar</p>
+                                </div>
+                                <div class="card-body">
+                                    <!-- DENTRO -->
+                                    <h3>Buscar maestros expertos</h3>
+                                    <hr>
+                                    <div class="table-responsive">
+                                        <div class="bootstrap-table">
+                                            <div class="fixed-table-toolbar">
+                                                <div class="bars pull-left">
+                                                    <div id="toolbargrid">
+                                                        <div class="form-inline" role="form">
+                                                             
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="toolbar clearfix">
+                                                <div class="toolbar-left">
+                                                    <div class="btn-group">
+                                                        <input type="button" value="Opciones > "
+                                                            class="btn btn-default dropdown-toggle"
+                                                            data-toggle="dropdown" aria-expanded="false">
+                                                        <ul class="dropdown-menu" role="menu">
+                                                            <li><a href="/broker/order/cancel/all_request">Cancel All
+                                                                    Orders</a></li>
+                                                        </ul>
+                                                    </div>
+
+                                                    <a onclick="location.href = '/broker/order/view?generate=pdf';"
+                                                        class="btn btn-default" target="_blank">
+                                                        <i class="fa fa-fw fa-file-pdf-o"></i> PDF</a>
+                                                    <a onclick="location.href = '/broker/order/view?generate=csv';"
+                                                        class="btn btn-default" target="_blank">
+                                                        <i class="fa fa-fw fa-file-excel-o"></i> CSV</a>
+
+                                                </div><br>
+                                                <div class="toolbar-right">
+                                                    <div class="form-inline" role="form">
+
+                                                        <a class="btn btn-primary filter-dates"
+                                                            style="color:white !important; background-color: #8BB240; border-color: #8BB240;">Buscar...</a>
+                                                        <a style="padding-left: 25px;" href=""></a>
+                                                        <input class="form-control table-search" type="text"
+                                                            placeholder="Ingresa información..">
+
+                                                    </div><br>
+
+                                                </div>
+                                            </div>
+                                            <div class="fixed-table-container">
+                                                <div class="fixed-table-header">
+                                                    <table></table>
+                                                </div>
+                                                <div class="fixed-table-body">
+                                                    <table id="grid" class="table table-striped table-hover"
+                                                        data-toolbar="#toolbargrid" data-pagination="true"
+                                                        data-search="true">
+                                                        <thead>
+                                                            <tr>
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">Clave</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">Nombre</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">Apellidos</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">Edad</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">Correo</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">Materia</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">E L I M I N A R</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr data-index="0">
+                                                                <td class="text-left" style="">01</td>
+                                                                <td class="text-left" style="">Juan
+                                                                </td>
+                                                                <td class="text-left" style="">Peréz Peréz</td>
+                                                                <td class="text-left" style="">35 años</td>
+                                                                <td class="text-left" style="">juanperez@utm...</td>
+                                                                <td class="text-left" style="">Tutoría</td>
+                                                                <td style="">
+                                                                    <a class="btn btn-danger" href="#"
+                                                                        data-toggle="tooltip" data-placement="top"
+                                                                        title="Cancel Order"><i
+                                                                            class="fa fa-fw fa-trash"></i></a>
+                                                                    <script>if ('Active' !== 'Active' && 'Active' !== 'Staged' && 'Active' !== 'Funds Needed') { $('#BTN_ORDER_CANCEL3').hide(); } else { $('#BTN_ORDER_CANCEL3').show(); } </script>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-index="1">
+                                                                <td class="text-left" style="">02</td>
+                                                                <td class="text-left" style="">Pedro
+                                                                </td>
+                                                                <td class="text-left" style="">Sanchez Molima</td>
+                                                                <td class="text-left" style="">38 años</td>
+                                                                <td class="text-left" style="">sanchezmol@utm...</td>
+                                                                <td class="text-left" style="">Experiencia de usuario
+                                                                </td>
+                                                                <td style="">
+                                                                    <a class="btn btn-danger" href="#"
+                                                                        data-toggle="tooltip" data-placement="top"
+                                                                        title="Cancel Order"><i
+                                                                            class="fa fa-fw fa-trash"></i></a>
+                                                                    <script>if ('Active' !== 'Active' && 'Active' !== 'Staged' && 'Active' !== 'Funds Needed') { $('#BTN_ORDER_CANCEL3').hide(); } else { $('#BTN_ORDER_CANCEL3').show(); } </script>
+                                                                </td>
+                                                            </tr>
+                                                            <tr data-index="2">
+                                                                <td class="text-left" style="">03</td>
+                                                                <td class="text-left" style="">Carlos
+                                                                </td>
+                                                                <td class="text-left" style="">Barcenas Canche</td>
+                                                                <td class="text-left" style="">29 años</td>
+                                                                <td class="text-left" style="">barcenascan@utm...</td>
+                                                                <td class="text-left" style="">Base de datos</td>
+
+                                                                <td style="">
+                                                                    <a class="btn btn-danger" href="#"
+                                                                        data-toggle="tooltip" data-placement="top"
+                                                                        title="Cancel Order"><i
+                                                                            class="fa fa-fw fa-trash"></i></a>
+                                                                    <script>if ('Active' !== 'Active' && 'Active' !== 'Staged' && 'Active' !== 'Funds Needed') { $('#BTN_ORDER_CANCEL3').hide(); } else { $('#BTN_ORDER_CANCEL3').show(); } </script>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tfoot></tfoot>
+                                                    </table>
+                                                </div>
+                                                <div class="fixed-table-pagination">
+                                                    <div class="pull-left pagination-detail">
+                                                        <nav aria-label="...">
+                                                            <ul class="pagination">
+                                                                <li class="page-item disabled">
+                                                                    <a class="page-link" href="#" tabindex="-1"
+                                                                        aria-disabled="true">Actual</a>
+                                                                </li>
+                                                                <li class="page-item active"><a class="page-link"
+                                                                        href="#">1 <span
+                                                                            class="sr-only">(current)</span></a></li>
+                                                                <li class="page-item " aria-current="page">
+                                                                    <a class="page-link" href="#">2</a>
+                                                                </li>
+                                                                <li class="page-item"><a class="page-link"
+                                                                        href="#">3</a></li>
+                                                                <li class="page-item">
+                                                                    <a class="page-link" href="#">Siguiente</a>
+                                                                </li>
+                                                            </ul>
+                                                        </nav>
+
+                                                    </div>
+                                                    <div class="pull-right pagination" style="display: none;">
+                                                        <ul class="pagination">
+                                                            <li class="page-first disabled"><a
+                                                                    href="javascript:void(0)">
+                                                                    <<< /a>
+                                                            </li>
+                                                            <li class="page-pre disabled"><a href="javascript:void(0)">
+                                                                    << /a>
+                                                            </li>
+                                                            <li class="page-number active disabled"><a
+                                                                    href="javascript:void(0)">1</a></li>
+                                                            <li class="page-next disabled"><a
+                                                                    href="javascript:void(0)">></a></li>
+                                                            <li class="page-last disabled"><a
+                                                                    href="javascript:void(0)">>></a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                    <!-- END DENTRO -->
+                                </div>
                             </div>
                         </div>
+                        <!-- END TABLE -->
                     </div>
                 </div>
             </div>
