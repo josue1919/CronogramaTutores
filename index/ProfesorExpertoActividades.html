@@ -24,8 +24,7 @@
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#" style="background-color: rgb(139,178,64);">
                     
                     <img style="width: 73px; height: 70px;" src="/assets/img/avatars/LOGOUTM.png" alt="Hola">
-                    
-                    <div class="sidebar-brand-text mx-3"><span>MENÚ</span></div>
+                
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
@@ -200,9 +199,31 @@
                                             <div class="form-row">
                                                 <div class="col">
                                                     <div class="form-group"><label for="username"><strong>Nombre:</strong></label><input class="form-control" type="text"></div>
+                                                    <div class="alert alert-danger col-md-12" role="alert">
+                                                        ¡COMPLETA ESTE CAMPO CORRECTAMENTE!
+                                                    </div>
                                                 </div>
+                                                
                                                 <div class="col">
-                                                    <div class="form-group"><label for="email"><strong>Materia</strong></label><input class="form-control" type="text"></div>
+                                                    <div class="col-md-6 form-group">
+                                                        <label for="first_name"><strong>Materia:</strong></label>
+                                                        <div class="dropdown">
+                                                            <button
+                                                                style="background-color: #8BB240; border-color: #8BB240;"
+                                                                class="btn btn-success dropdown-toggle" type="button"
+                                                                id="dropdownMenuButton" data-toggle="dropdown"
+                                                                aria-haspopup="true" aria-expanded="false">
+                                                                S E L E C C I O N A R
+                                                            </button>
+                                                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                                <a class="dropdown-item" href="#">Base de datos</a>
+                                                                <a class="dropdown-item" href="#">Tutoría</a>
+                                                                <a class="dropdown-item" href="#">Experiencia de usuario</a>
+                                                                <a class="dropdown-item" href="#">Seguridad Informatica</a>
+                                                                <a class="dropdown-item" href="#">Arquitectura de software</a>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </form>
@@ -230,6 +251,10 @@
                                                             <a class="dropdown-item" href="#">Cualquiera</a>
                                                             </div>
                                                         </div>
+                                                    </div>
+
+                                                    <div class="alert alert-danger col-md-10" role="alert">
+                                                        ¡SELECCIONA UNA OPCIÓN!
                                                     </div>
                                                 </div>
                                                 <div class="col">
