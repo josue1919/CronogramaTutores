@@ -23,7 +23,7 @@
     <div id="wrapper">
         <nav class="navbar navbar-dark border-success d-md-flex align-items-start visible bounce animated sidebar sidebar-dark accordion bg-gradient-primary p-0"
             style="background-color: rgb(139,178,64);">
-            <div class="container-fluid d-flex flex-column p-0" >
+            <div class="container-fluid d-flex flex-column p-0">
                 <a class="navbar-brand d-flex justify-content-center align-items-center sidebar-brand m-0" href="#"
                     style="background-color: rgb(139,178,64);">
                     <img style="width: 72px; height: 70px;" src="/assets/img/avatars/LOGOUTM.png" alt="Hola">
@@ -31,12 +31,13 @@
                     <!-- <div class="sidebar-brand-text mx-3"><span>MENÚ</span></div> -->
                 </a>
                 <hr class="sidebar-divider my-0">
-                <ul class="nav navbar-nav text-light" id="accordionSidebar" >
+                <ul class="nav navbar-nav text-light" id="accordionSidebar">
                     <li class="nav-item" role="presentation"><a class="nav-link active" href="tutorprofile.html"
                             style="background-color: rgb(139,178,64);"><i
                                 class="fas fa-user"></i><span>Perfil</span></a></li>
                     <li class="nav-item" role="presentation"><a class="nav-link" href="tutorgenerar.html"
-                            style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Generar Cronogramas</span></a></li>
+                            style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Generar
+                                Cronogramas</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" data-aos="fade"
                         id="sidebarToggle" type="button"></button></div>
@@ -59,7 +60,7 @@
                                             class="fas fa-search"></i></button></div>
                             </div>
                         </form> -->
-                        <p>Perfil Tutor Bienvenido</p>
+                        <p style="font-weight: bold; font-size: 15pt;"> Perfil Tutor Bienvenido</p>
                         <ul class="nav navbar-nav flex-nowrap ml-auto">
                             <li class="nav-item dropdown d-sm-none no-arrow"><a class="dropdown-toggle nav-link"
                                     data-toggle="dropdown" aria-expanded="false" href="#"><i
@@ -181,7 +182,7 @@
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link"
                                         data-toggle="dropdown" aria-expanded="false" href="#"><span
                                             class="d-none d-lg-inline mr-2 text-gray-600 small">Victor Matos
-                                            </span><img class="border rounded-circle img-profile"
+                                        </span><img class="border rounded-circle img-profile"
                                             src="../assets/img/avatars/usuario.png"></a>
                                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu">
                                         <a class="dropdown-item" role="presentation" href="Adminprofile.html"><i
@@ -327,17 +328,50 @@
                                                                 name="ewefwe" min="01/01/1900" max="01/01/2500"></div>
                                                     </div>
                                                 </div>
-                                                <div class="form-group">
+
+                                                <div class="form-row">
                                                     <div class="col">
                                                         <div class="form-group"><label
-                                                                for="first_name"><strong>Correo:</strong></label><input
+                                                                for="first_name"><strong>Correo</strong></label><input
                                                                 class="form-control" type="text" name="first_name"
                                                                 value="VictorMatos@gmail.com"></div>
                                                     </div>
+
+                                                    <div class="col">
+                                                        <div class="col-md-6 form-group">
+                                                            <label for="first_name"><strong>Materia</strong></label>
+                                                            <div class="dropdown">
+                                                                <button
+                                                                    style="background-color: #8BB240; border-color: #8BB240;"
+                                                                    class="btn btn-success dropdown-toggle disabled"
+                                                                    type="button" id="dropdownMenuButton"
+                                                                    data-toggle="dropdown" aria-haspopup="true"
+                                                                    aria-expanded="false">
+                                                                    T u t o r í a
+                                                                </button>
+                                                                <div class="dropdown-menu"
+                                                                    aria-labelledby="dropdownMenuButton">
+                                                                    <a class="dropdown-item" href="#">PROFESOR
+                                                                        EXPERTO</a>
+                                                                    <a class="dropdown-item" href="#">TUTORES</a>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </form><button class="btn btn-primary btn-sm border-white" type="submit"
-                                                style="background-color: rgb(139,178,64);">Actualizar
-                                                información</button>
+                                            </form>
+                                            <div class="col-md-12 form-group">
+                                                <a class="btn btn-block btn-success btn-icon-split" role="button"><span
+                                                        class="text-white-50 icon"
+                                                        style="background-color: rgb(139,178,64);"><i
+                                                            class="fas fa-wrench"></i></span><span
+                                                        class="text-white text"
+                                                        style="background-color: rgb(139,178,64);">Actualizar
+                                                        información</span></a>
+
+
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

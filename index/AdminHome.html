@@ -55,11 +55,11 @@
                     data-bs-tooltip="">
                     <!-- jsjsjs -->
                     <div class="container-fluid"><button class="btn btn-link d-md-none rounded-circle mr-3"
-                            id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
+                             id="sidebarToggleTop" type="button"><i class="fas fa-bars"></i></button>
                         <form
                             class="form-inline d-none d-sm-inline-block mr-auto ml-md-3 my-2 my-md-0 mw-100 navbar-search">
                             <div class="input-group"><input class="bg-light form-control bounce animated border-0 small"
-                                    type="text" placeholder="Buscar maestros...">
+                                type="text" placeholder="B U S C A R . . . " >
                                 <div class="input-group-append"><button class="btn btn-success py-0" type="button"
                                         style="background-color: rgb(139,178,64);"><i
                                             class="fas fa-search"></i></button></div>
@@ -378,7 +378,7 @@
 
                                                 <!-- Boton -->
                                                 <div class="col-md-12 form-group">
-                                                    <a class="btn btn-success btn-icon-split" role="button"><span
+                                                    <a class="btn btn-block btn-success btn-icon-split" role="button"><span
                                                             class="text-white-50 icon"
                                                             style="background-color: rgb(139,178,64);"><i
                                                                 class="fas fa-check"></i></span><span
@@ -386,13 +386,9 @@
                                                             style="background-color: rgb(139,178,64);">Registrar
                                                             Maestro</span></a>
 
-                                                            <a class="btn btn-success btn-icon-split disabled"
-                                                        role="button"><span class="text-white-50 icon"
-                                                            style="background-color: #E74A3B;"><i
-                                                                class="fas fa-close"></i></span><span
-                                                            class="text-white text"
-                                                            style="background-color: #E74A3B;">Eliminar Maestro</span></a>
+                                                           
                                                 </div>
+                                                
                                             </form>
                                         </div>
                                     </div>
@@ -411,7 +407,7 @@
                                 </div>
                                 <div class="card-body">
                                     <!-- DENTRO -->
-                                    <h3>Buscar maestros expertos</h3>
+                                    <h3>Buscar maestros expertos y tutores</h3>
                                     <hr>
                                     <div class="table-responsive">
                                         <div class="bootstrap-table">
@@ -491,8 +487,14 @@
                                                                     <div class="th-inner sortable">Materia</div>
                                                                     <div class="fht-cell"></div>
                                                                 </th>
+
                                                                 <th class="text-left" style="">
-                                                                    <div class="th-inner sortable">E L I M I N A R</div>
+                                                                    <div class="th-inner sortable">Tipo usuario</div>
+                                                                    <div class="fht-cell"></div>
+                                                                </th>
+
+                                                                <th class="text-left" style="">
+                                                                    <div class="th-inner sortable">Eliminar y Modificar</div>
                                                                     <div class="fht-cell"></div>
                                                                 </th>
 
@@ -507,12 +509,16 @@
                                                                 <td class="text-left" style="">35 años</td>
                                                                 <td class="text-left" style="">juanperez@utm...</td>
                                                                 <td class="text-left" style="">Tutoría</td>
+                                                                <td class="text-left" style="">Tutor</td>
                                                                 <td style="">
                                                                     <a class="btn btn-danger" href="#"
                                                                         data-toggle="tooltip" data-placement="top"
                                                                         title="Cancel Order"><i
                                                                             class="fa fa-fw fa-trash"></i></a>
-                                                                    <script>if ('Active' !== 'Active' && 'Active' !== 'Staged' && 'Active' !== 'Funds Needed') { $('#BTN_ORDER_CANCEL3').hide(); } else { $('#BTN_ORDER_CANCEL3').show(); } </script>
+                                                                    <a class="btn btn-primary disabled" href="#"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Cancel Order"><i
+                                                                        class="fa fa-fw fa-wrench"></i></a>
                                                                 </td>
                                                             </tr>
                                                             <tr data-index="1">
@@ -524,12 +530,16 @@
                                                                 <td class="text-left" style="">sanchezmol@utm...</td>
                                                                 <td class="text-left" style="">Experiencia de usuario
                                                                 </td>
+                                                                <td class="text-left" style="">Maestro Experto</td>
                                                                 <td style="">
                                                                     <a class="btn btn-danger" href="#"
                                                                         data-toggle="tooltip" data-placement="top"
                                                                         title="Cancel Order"><i
                                                                             class="fa fa-fw fa-trash"></i></a>
-                                                                    <script>if ('Active' !== 'Active' && 'Active' !== 'Staged' && 'Active' !== 'Funds Needed') { $('#BTN_ORDER_CANCEL3').hide(); } else { $('#BTN_ORDER_CANCEL3').show(); } </script>
+                                                                    <a class="btn btn-primary disabled" href="#"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Cancel Order"><i
+                                                                        class="fa fa-fw fa-wrench"></i></a>
                                                                 </td>
                                                             </tr>
                                                             <tr data-index="2">
@@ -540,13 +550,16 @@
                                                                 <td class="text-left" style="">29 años</td>
                                                                 <td class="text-left" style="">barcenascan@utm...</td>
                                                                 <td class="text-left" style="">Base de datos</td>
-
+                                                                <td class="text-left" style="">Maestro Experto</td>
                                                                 <td style="">
                                                                     <a class="btn btn-danger" href="#"
                                                                         data-toggle="tooltip" data-placement="top"
                                                                         title="Cancel Order"><i
                                                                             class="fa fa-fw fa-trash"></i></a>
-                                                                    <script>if ('Active' !== 'Active' && 'Active' !== 'Staged' && 'Active' !== 'Funds Needed') { $('#BTN_ORDER_CANCEL3').hide(); } else { $('#BTN_ORDER_CANCEL3').show(); } </script>
+                                                                    <a class="btn btn-primary disabled" href="#"
+                                                                    data-toggle="tooltip" data-placement="top"
+                                                                    title="Cancel Order"><i
+                                                                        class="fa fa-fw fa-wrench"></i></a>
                                                                 </td>
                                                             </tr>
                                                         </tbody>

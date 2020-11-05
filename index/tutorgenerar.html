@@ -26,10 +26,10 @@
                 </a>
                 <hr class="sidebar-divider my-0">
                 <ul class="nav navbar-nav text-light" id="accordionSidebar">
-                    <li class="nav-item" role="presentation"><a class="nav-link active" href="tutorprofile.html"
+                    <li class="nav-item" role="presentation"><a class="nav-link " href="tutorprofile.html"
                             style="background-color: rgb(139,178,64);"><i
                                 class="fas fa-user"></i><span>Perfil</span></a></li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="tutorgenerar.html"
+                    <li class="nav-item" role="presentation"><a class="nav-link active" href="tutorgenerar.html"
                             style="background-color: rgb(139,178,64);"><i class="fas fa-table"></i><span>Generar Cronogramas</span></a></li>
                 </ul>
                 <div class="text-center d-none d-md-inline"><button class="btn rounded-circle border-0" data-aos="fade" id="sidebarToggle" type="button"></button></div>
@@ -47,7 +47,7 @@
                             <li class="nav-item dropdown no-arrow" role="presentation">
                                 <div class="nav-item dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#"><span class="d-none d-lg-inline mr-2 text-gray-600 small">Victor Matos</span><img class="border rounded-circle img-profile" src="../assets/img/avatars/usuario.png"></a>
                                     <div
-                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ajustes</a>
+                                        class="dropdown-menu shadow dropdown-menu-right animated--grow-in" role="menu"><a class="dropdown-item" role="presentation" href="tutorprofile.html"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Perfil</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Ajustes</a>
                                         <a
                                             class="dropdown-item" role="presentation" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Actividad</a>
                                             <div class="dropdown-divider"></div><a class="dropdown-item" role="presentation" href="index.html"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Cerrar Sesión</a></div>
@@ -63,6 +63,58 @@
 
                        <div class="contenedorcard">
                         <div class="cardcrono">
+                            <br>
+                            <!-- Busqueda -->
+
+                            
+                            <div class="container-fluid">
+                                <div class="bootstrap-table">
+                                    <div class="fixed-table-toolbar">
+                                        <div class="bars pull-left">
+                                            <div id="toolbargrid">
+                                                <div class="form-inline" role="form">
+                                                     
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="toolbar clearfix">
+                                        <div class="toolbar-left">
+                                            <div class="btn-group">
+                                                <input type="button" value="Opciones > "
+                                                    class="btn btn-default dropdown-toggle"
+                                                    data-toggle="dropdown" aria-expanded="false">
+                                                <ul class="dropdown-menu" role="menu">
+                                                    <li><a href="#">Cancel All
+                                                            Orders</a></li>
+                                                </ul>
+                                            </div>
+    
+                                            <a onclick="location.href = '#';"
+                                                class="btn btn-default" target="_blank">
+                                                <i class="fa fa-fw fa-file-pdf-o"></i> PDF</a>
+                                            <a onclick="location.href = '#';"
+                                                class="btn btn-default" target="_blank">
+                                                <i class="fa fa-fw fa-file-excel-o"></i> CSV</a>
+    
+                                        </div><br>
+                                        <div class="toolbar-right">
+                                            <div class="form-inline" role="form">
+    
+                                                <a class="btn btn-primary filter-dates"
+                                                    style="color:white !important; background-color: #8BB240; border-color: #8BB240;">Buscar...</a>
+                                                <a style="padding-left: 14px;" href=""></a>
+                                                <input class="form-control table-search" style="width: 600px;" type="text"
+                                                    placeholder="Ingresa información..">
+    
+                                            </div><br>
+    
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                
+                            <!-- End -->
                             <section class="tablecrono">
                                 <div>no</div><div>Actividad planeada</div><div>Duracion</div><div>GestionTutorial</div><div>Observaciones</div><div>Mis actividades</div>
                                 <div>1</div><div>Bienvenida al grupo</div><div>50 min</div><div>Tutor</div><div>Comportamiento</div><div class="custom-control custom-switch" style="display: flex; justify-content: center; align-items: center;"><input type="radio" aria-label="Radio button for following text input" style="margin-right: 8px;">Agregar</div>
@@ -78,14 +130,66 @@
                                 
                             </section>
 
+                            <div class="row">
+                            </div>
                             <section class="sectionbuton">
-                                <button class="btn btn-primary btn-sm border rounded border-white"
-                                            type="button" style="background-color: rgb(139,178,64);" ><a href="PlantillaCronograma.html" style="color: #fff; text-decoration: none;">Generar Cronograma</a></button>
+                                <div class="fixed-table-pagination">
+                                    <div class="pull-left pagination-detail">
+                                        <nav aria-label="...">
+                                            <ul class="pagination">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link" href="#" tabindex="-1"
+                                                        aria-disabled="true">Actual</a>
+                                                </li>
+                                                <li class="page-item active"><a class="page-link"
+                                                        href="#">1 <span
+                                                            class="sr-only">(current)</span></a></li>
+                                                <li class="page-item " aria-current="page">
+                                                    <a class="page-link" href="#">2</a>
+                                                </li>
+                                                <li class="page-item"><a class="page-link"
+                                                        href="#">3</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#">Siguiente</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
 
+                                    </div>
+                                    <div class="pull-right pagination" style="display: none;">
+                                        <ul class="pagination">
+                                            <li class="page-first disabled"><a
+                                                    href="javascript:void(0)">
+                                                    <<< /a>
+                                            </li>
+                                            <li class="page-pre disabled"><a href="javascript:void(0)">
+                                                    << /a>
+                                            </li>
+                                            <li class="page-number active disabled"><a
+                                                    href="javascript:void(0)">1</a></li>
+                                            <li class="page-next disabled"><a
+                                                    href="javascript:void(0)">></a></li>
+                                            <li class="page-last disabled"><a
+                                                    href="javascript:void(0)">>></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                
                             </section>
+                            <div class="col-md-12 form-group">
+                                <a class="btn btn-block btn-success btn-icon-split" href="PlantillaCronograma.html" role="button"><span
+                                        class="text-white-50 icon"
+                                        style="background-color: rgb(139,178,64);"><i
+                                            class="fas fa-calendar"></i></span><span
+                                        class="text-white text"
+                                        style="background-color: rgb(139,178,64);">GENERAR CRONOGRAMA</span></a>
+
+                                       
+                            </div>
 
                         </div>
-                       </div>
+                       </div><br><br><br><br><br>
                         <!-- <div class="card">
                             <div class="card-header">
                                 <ul class="nav nav-tabs card-header-tabs" role="tablist">
